@@ -16,6 +16,9 @@ rake db:migrate
 * How to run the test suite
 For macOS:
 Download https://sites.google.com/a/chromium.org/chromedriver/
+<br/>
 mv chromedriver /usr/local/bin/chromedriver
+<br/>
 bundle install
+<br/>
 bundle exec cucumber --profile default --guess --tags @submit_link
