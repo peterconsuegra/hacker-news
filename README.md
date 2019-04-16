@@ -14,7 +14,7 @@ rake db:create
 * Database initialization
 rake db:migrate
 
-To run the test For macOS:
+To run the test for macOS:
 <br/>
 Download https://sites.google.com/a/chromium.org/chromedriver/
 <br/>
