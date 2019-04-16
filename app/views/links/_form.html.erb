@@ -1,7 +1,7 @@
 <%= form_for @link do |f| %>
   <%= render "shared/errors", object: @link %>
   
-  <%= f.label :categories %>
+  <%=f.label :categories %>
   <%= collection_select(:link, :category_ids, Category.all, :id, :name, {}, { :multiple => true } )%>
 
   <div class="form-group">

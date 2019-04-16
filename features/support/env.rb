@@ -8,7 +8,7 @@ require 'cucumber/rails'
 require 'selenium/webdriver'
 require 'capybara/rails'
 require 'chromedriver-helper'
-
+require 'database_cleaner'
 
 Capybara.default_selector = :css
 
@@ -76,4 +76,5 @@ end
 # The :transaction strategy is faster, but might give you threading problems.
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
+DatabaseCleaner.strategy = :truncation
 

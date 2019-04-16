@@ -6,17 +6,16 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
-Ruby version 2.5.0
-
+2.6.2
 * System dependencies
-Postgresql
-* Configuration
-rake app:set_categories
+DB: Postgresql
 * Database creation
 rake db:create
 * Database initialization
 rake db:migrate
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+For macOS:
+Download https://sites.google.com/a/chromium.org/chromedriver/
+mv chromedriver /usr/local/bin/chromedriver
+bundle install
+bundle exec cucumber --profile default --guess --tags @submit_link
