@@ -13,7 +13,9 @@ DB: Postgresql
 rake db:create
 * Database initialization
 rake db:migrate
-* How to run the test suite
+
+To run the test
+<br/>
 For macOS:
 Download https://sites.google.com/a/chromium.org/chromedriver/
 <br/>
